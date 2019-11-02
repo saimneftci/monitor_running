@@ -5,7 +5,9 @@ import time, commands, os
 
 def write_time_and_pid:
     #prevent to freeze 
-    file = open("monitor_time.txt", "w") file.write(str(time.time()) + "|" + pid) print(time.time()) file.close()
+    file = open("monitor_time.txt", "w") 
+    file.write(str(time.time()) + "|" + pid)
+    file.close()
 
 
 try:
