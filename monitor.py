@@ -14,7 +14,7 @@ except:
 def write_time_and_pid:
     #prevent to freeze
     file = open("monitor_time.txt", "w")
-    file.write(str(time.time()) + "|" + pid)
+    file.write(str(time.time()) + "|" + str(os.getpid()))
     print(time.time())
     file.close()
 
