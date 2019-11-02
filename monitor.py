@@ -31,8 +31,7 @@ while 1:
     print(time.time() - float(timestamp))
     if time.time() - float(timestamp)>123:
         print(commands.getoutput("kill -9 " + pid))
-        #os.system("python btct_bnc_instant.py &")
-        print (os.system("python btct_bnc_instant.py &"))
+        print (os.system("script.py &"))
 
 
 
