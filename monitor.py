@@ -3,13 +3,6 @@ import time, commands, os
 # Write time and PID to txt file and read it from monitor file if timedelta is bigger than
 # desired range kill current process and start new one
 
-def write_time_and_pid:
-    #prevent to freeze 
-    file = open("monitor_time.txt", "w") 
-    file.write(str(time.time()) + "|" + pid)
-    file.close()
-
-
 try:
     file = open("monitor_time.txt")
 except:
