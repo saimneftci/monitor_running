@@ -9,12 +9,12 @@ Usage:
 import it from unresponsive program or put following code inside
 
 
-def write_time_and_pid:
-    #prevent to freeze
-    file = open("monitor_time.txt", "w")
-    file.write(str(time.time()) + "|" + pid)
-    print(time.time())
-    file.close()
+    def write_time_and_pid:
+        #prevent to freeze
+        file = open("monitor_time.txt", "w")
+        file.write(str(time.time()) + "|" + pid)
+        print(time.time())
+        file.close()
     
  
  call it from desired interval
